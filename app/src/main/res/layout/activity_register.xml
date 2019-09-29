@@ -26,30 +26,16 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="331dp"
+                android:layout_width="328dp"
                 android:layout_height="98dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="76dp"
                 android:layout_marginEnd="8dp"
                 android:src="@drawable/brg"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.566"
+                app:layout_constraintHorizontal_bias="0.509"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="37dp" />
-
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="363dp" />
 
             <LinearLayout
                 android:layout_width="326dp"
@@ -74,12 +60,13 @@
                         android:layout_width="324dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
-                        android:layout_marginTop="88dp"
+                        android:layout_marginTop="160dp"
                         android:layout_marginEnd="8dp"
                         android:onClick="sendMessage"
                         android:text="Зарегистрироваться"
                         android:textColor="@android:color/background_dark"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.571"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 
@@ -111,7 +98,7 @@
                         android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="48dp"
+                        android:layout_marginTop="32dp"
                         android:fontFamily="sans-serif-black"
                         android:text="Введите e-mail"
                         android:textSize="18sp"
@@ -124,12 +111,25 @@
                         android:id="@+id/textView20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="32dp"
+                        android:layout_marginTop="24dp"
                         android:fontFamily="sans-serif-black"
                         android:text="Введите пароль"
                         android:textSize="18sp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.021"
+                        app:layout_constraintHorizontal_bias="0.015"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="104dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Введите пароль"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.01"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -137,7 +137,7 @@
                         android:id="@+id/editPassword"
                         android:layout_width="322dp"
                         android:layout_height="31dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="8dp"
                         android:ems="10"
                         android:inputType="textPassword"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -148,7 +148,7 @@
                         android:id="@+id/editText"
                         android:layout_width="322dp"
                         android:layout_height="32dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginTop="8dp"
                         android:ems="10"
                         android:inputType="textEmailAddress"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -165,7 +165,17 @@
                         app:layout_constraintBottom_toTopOf="@+id/button"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+                        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+                        app:layout_constraintVertical_bias="0.87" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="320dp"
+                        android:layout_height="35dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="293dp" />
 
                 </android.support.constraint.ConstraintLayout>
 
