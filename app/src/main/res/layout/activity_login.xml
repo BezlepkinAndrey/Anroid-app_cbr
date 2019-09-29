@@ -69,7 +69,7 @@
                     android:layout_height="match_parent">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/btnLogin"
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="324dp"
                         android:layout_height="wrap_content"
